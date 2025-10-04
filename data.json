@@ -1,0 +1,12 @@
+[{
+  "order_id": 1,
+  "customer_id": 101,
+  "amount": 2000
+},{
+  "order_id": 2,
+  "customer_id": 201,
+  "amount": 3000},{
+  "order_id": 3,
+  "customer_id": 103,
+  "amount": 200}
+]
