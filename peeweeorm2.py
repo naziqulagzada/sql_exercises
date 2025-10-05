@@ -26,10 +26,10 @@ def create_tables():
     database.create_tables([Department, Employee])
 
 def load():
-    with open(f"fixtures/department.json", "r") as f:
+    with open(f"department.json", "r") as f:
         departments_data = json.load(f)
 
-    with open(f"fixtures/employee.json", "r") as f:
+    with open(f"employee.json", "r") as f:
         employees_data = json.load(f)
 
     conn = sqlite3.connect("employee.db")
@@ -62,11 +62,17 @@ def show_id():
         print(f"{emp.name} - {emp.JobTitle} - {emp.departmentID.departmentName}")
 
 
+def show_name():
+    query = (Employee.select(Employee, Department).join(Department))
+
+    for q in query:
+        print(q.name, "->", "Department ID" , q.departmentID)
 
 if __name__ == "__main__":
     # create_tables()
     # load()
-    show_id()
+    # show_id()
+    show_name()
 
 
 
