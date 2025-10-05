@@ -1,0 +1,30 @@
+[
+    {
+        "employeeID": 1,
+        "name": "Alice",
+        "salary": 70000,
+        "departmentID": 1,
+        "JobTitle": "Software Engineer"
+    },
+    {
+        "employeeID": 2,
+        "name": "Bob",
+        "salary": 65000,
+        "departmentID": 1,
+        "JobTitle": "DevOps Engineer"
+    },
+    {
+        "employeeID": 3,
+        "name": "Charlie",
+        "salary": 60000,
+        "departmentID": 2,
+        "JobTitle": "HR Specialist"
+    },
+    {
+        "employeeID": 4,
+        "name": "Diana",
+        "salary": 55000,
+        "departmentID": 3,
+        "JobTitle": "Sales Associate"
+    }
+]
